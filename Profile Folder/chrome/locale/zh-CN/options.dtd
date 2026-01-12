@@ -1,0 +1,72 @@
+<!ENTITY window.title	"BeautyFox 选项">
+
+<!ENTITY tab.general	"常规">
+<!ENTITY tab.extras		"附加功能">
+<!ENTITY tab.about		"关于">
+<!ENTITY tab.newTab     "新标签页">
+
+<!ENTITY preview.header         "信息">
+<!ENTITY preview.placeholder    "在项目上悬停以获取更多信息">
+
+<!ENTITY setting.windowsClassicThemeWarning "你正在使用经典主题，一些选项被禁用。">
+<!ENTITY setting.windowsBasicThemeWarning   "你正在使用基础主题，一些选项被禁用。">
+
+<!ENTITY setting.internetExplorerAppearance			    "Internet Explorer 外观">
+<!ENTITY setting.description.internetExplorerAppearance	"选择Internet Explorer的外观">
+<!ENTITY setting.hideFakeInnerBorders				    "隐藏模拟的内边框">
+<!ENTITY setting.description.hideFakeInnerBorders       "隐藏窗口框架的模拟内边框。">
+<!ENTITY setting.inetcpl							    "Internet 选项将启动 inetcpl.cpl">
+<!ENTITY setting.showDownloadProgress				    "在下载按钮上显示下载进度">
+<!ENTITY setting.tabsOnNavRow						    "将标签页移动到导航栏">
+<!ENTITY setting.edgeButton							    "在 Microsoft Edge 打开新窗口按钮 (仅适用于 Windows 10 主题的 Internet Explorer 11)">
+<!ENTITY setting.description.edgeButton                 "在新标签页按钮旁边添加在 Edge 打开新窗口按钮 (仅适用于 Windows 10 主题的 Internet Explorer 11)。">
+<!ENTITY setting.hide								    "隐藏">
+<!ENTITY setting.oldEdgeIcon						    "使用旧图标显示">
+<!ENTITY setting.newEdgeIcon						    "使用新图标显示">
+<!ENTITY setting.hideSettingsInPopUp				    "在弹出窗口中隐藏设置按钮">
+<!ENTITY setting.doNotUseOldSettingsIcon			    "不使用旧设置图标 (仅适用于 Internet Explorer 9 Build 7777 外观)">
+<!ENTITY setting.extensionsButton					    "扩展按钮">
+<!ENTITY setting.description.extensionsButton		    "隐藏或选择扩展按钮的位置。">
+<!ENTITY setting.moveToFavouritesBar				    "移动至收藏夹栏">
+<!ENTITY setting.moveToEndToolbar					    "移动到尾部工具栏">
+<!ENTITY setting.bookmarkItemTitleWidth				    "自定义书签项标题宽度">
+<!ENTITY setting.longTitles							    "长标题">
+<!ENTITY setting.shortTitles						    "短标题">
+<!ENTITY setting.iconsOnly							    "仅图标">
+<!ENTITY setting.fakeDropdownIconsInCommandBar		    "在菜单栏中显示假的下拉图标">
+<!ENTITY setting.customiseCommandBarItems 			    "自定义菜单栏显示项目">
+<!ENTITY setting.description.customiseCommandBarItems   "菜单栏显示所有项目、标题或仅显示图标">
+<!ENTITY setting.showAllTextLabels					    "显示所有文本标签">
+<!ENTITY setting.showSelectiveText					    "显示选择性文本">
+<!ENTITY setting.showOnlyIcons						    "仅显示图标">
+<!ENTITY setting.showStatusBar						    "显示状态栏">
+<!ENTITY setting.showFakeInternetLabel				    "假的 Internet 保护标签选项">
+<!ENTITY setting.internetLabelInternet				    "Internet">
+<!ENTITY setting.internetLabelInternetProtectedOn	    "Internet | 保护模式: 启用">
+<!ENTITY setting.internetLabelInternetProtectedOff	    "Internet | 保护模式: 关闭">
+<!ENTITY setting.topSitesRows				            "在新标签页显示的常用网站行数">
+<!ENTITY setting.doNotRunWizardInNextStart			    "下次启动时不显示设置向导">
+<!ENTITY setting.description.doNotRunWizardInNextStart	"这将重置所有 BeautyFox 设置。">
+<!ENTITY setting.navigationButtonRadius				    "导航按钮圆角半径">
+<!ENTITY setting.customColouringForUI				    "自定义用户界面配色">
+<!ENTITY setting.customColourMethod					    "自定义着色方式">
+<!ENTITY setting.disabled							    "禁用">
+<!ENTITY setting.custom								    "自定义">
+<!ENTITY setting.userAccentColour					    "用户偏好颜色">
+<!ENTITY setting.AWMAccentColour					    "Aero Window Manager 主题色">
+<!ENTITY setting.DWMBGAccentColour					    "DWMBlurGlass 主题色（可能导致性能问题）">
+<!ENTITY setting.customcolour						    "自定义颜色">
+<!ENTITY setting.DWMBlurGlassPath						"DWMBlurGlass 可执行文件路径">
+<!ENTITY setting.nativeControlsPatch				    "Native Controls 补丁">
+<!ENTITY setting.forceAeroSupport					    "强制启用 Aero 支持">
+<!ENTITY setting.nativeControlsOn					    "Native controls 已启用">
+<!ENTITY setting.nativeControlsPatchIsNotInstalled	    "补丁未安装">
+<!ENTITY setting.getTheNativeControlsPatch			    "获取补丁">
+
+<!ENTITY about.creditsAndSpecialThanks	"作者与特别感谢">
+<!ENTITY about.browserVersion           "版本">
+<!ENTITY about.basedOnBrowserVersion    "底层版本">
+<!ENTITY about.browserUpdateChannel     "更新频道">
+<!ENTITY about.architecture             "架构">
+<!ENTITY about.OSName                   "操作系统">
+<!ENTITY about.compositor               "合成器">

@@ -1,0 +1,5 @@
+<!ENTITY toolbar.navigation "导航栏">
+<!ENTITY toolbar.end 		"尾部工具栏">
+<!ENTITY toolbar.favourites "收藏夹栏">
+<!ENTITY toolbar.command    "命令栏">
+<!ENTITY toolbar.status		"状态栏">

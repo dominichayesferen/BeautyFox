@@ -1,0 +1,7 @@
+<!ENTITY dialog.title	"关于 Internet Explorer">
+
+<!ENTITY dialog.version			"版本">
+<!ENTITY dialog.updateVersions	"更新版本">
+<!ENTITY dialog.cipherStrength	"加密强度">
+<!ENTITY dialog.productID		"产品 ID">
+<!ENTITY dialog.copyright		"警告：此计算机程序受版权法和国际条约保护。未经授权复制或分发此程序，或其任何部分，可能导致严重的民事和刑事处罚，并将依法受到最严厉的追究。">

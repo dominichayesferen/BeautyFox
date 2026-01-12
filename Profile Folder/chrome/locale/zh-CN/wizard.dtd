@@ -1,0 +1,26 @@
+<!ENTITY window.titleWizard "BeautyFox 设置向导">
+
+<!ENTITY wizard.next "下一步">
+
+<!ENTITY wizard.welcome							"欢迎使用 BeautyFox!">
+<!ENTITY wizard.about							"本项目致力于还原干净、清爽、精简的网络冲浪体验，优先考虑优雅性。通过简化界面，BeautyFox 为用户提供了从现代浏览器复杂性中解脱的清新体验。">
+<!ENTITY wizard.appearance						"选择您喜欢的主题">
+<!ENTITY wizard.manyStyles						"Internet Explorer 在其生命周期中拥有许多样式，选择您偏好的主题">
+<!ENTITY wizard.IE9PreReleaseFeatures			"选择 Internet Explorer 9 预览版功能">
+<!ENTITY wizard.IE9PreRelease7777Appearance		"继续使用 Build 7777 主题">
+<!ENTITY wizard.IE9PreRelease7930Appearance		"继续使用 Build 7930 主题">
+<!ENTITY wizard.IE9Features						"选择 Internet Explorer 9 特性">
+<!ENTITY wizard.IE9About						"使用 Internet Explorer 9 主题">
+<!ENTITY wizard.IE10DeveloperPreviewAbout		"使用 Internet Explorer 10 开发者预览版的“关于”对话框">
+<!ENTITY wizard.IE10ConsumerPreviewAbout		"使用 Internet Explorer 10 消费者预览版的“关于”对话框">
+<!ENTITY wizard.IE10ReleasePreviewAbout			"使用 Internet Explorer 10 发布预览版的“关于”对话框">
+<!ENTITY wizard.IE10PlusFeatures				"选择 Internet Explorer 10+ 特性">
+<!ENTITY wizard.IE10Appearance					"使用 Internet Explorer 10 主题">
+<!ENTITY wizard.IE11Appearance					"使用 Internet Explorer 11 主题">
+<!ENTITY wizard.IE11AppearanceDescription		"在“关于”对话框中显示 Internet Explorer 11 信息">
+<!ENTITY wizard.IE11Win10Appearance				"继续使用 Windows 10 中的 Internet Explorer 11 外观">
+<!ENTITY wizard.IE11Win10AppearanceDescription	"添加反馈按钮（笑脸图标，可拖出）并将“关于”对话框更改为包含 Internet Explorer 信息的 Windows 版本窗口">
+<!ENTITY wizard.additional						"附加选项">
+<!ENTITY wizard.openBeautyFoxOptions			"打开 BeautyFox 偏好设置">
+<!ENTITY wizard.thanks							"感谢使用 BeautyFox!">
+<!ENTITY wizard.restartRequired					"要应用更改，请重新启动 Firefox。您可以通过按住 Shift 键时单击设置菜单来随时访问 BeautyFox 偏好设置。">

@@ -26,6 +26,16 @@ html[lang=pt-PT] {
   --label-view-downloads: Exibir Transferências - ;
   --label-view-n-track-your-downloads: Ver e controlar tranferências;
 }
+window[lang=zh-CN],
+html[lang=zh-CN] {
+  --label-view-downloads: "查看下载内容" - ;
+  --label-view-n-track-your-downloads: "查看并跟踪您的下载内容";
+  --get-more-add-ons-label: "获取更多附加组件";
+  --feeds-label: "订阅源";
+  --find-label: "查找：";
+  --previous-label: "上一个";
+  --next-label: "下一个";
+}
 window[lang*=es],
 html[lang*=es] {
   --label-view-downloads: Ver descargas: ;

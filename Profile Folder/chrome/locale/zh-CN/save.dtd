@@ -1,0 +1,7 @@
+<!ENTITY save.header "要运行或保存此文件吗？">
+
+<!ENTITY general.name "名称">
+<!ENTITY general.type "类型">
+<!ENTITY general.from "来源">
+<!ENTITY saveAs.warning "虽然来自互联网的文件可能有用，但这种文件类型可能会对您的计算机造成潜在危害。如果您不信任该来源，请不要运行或保存此软件。">
+<!ENTITY saveAs.link    "风险是什么？">

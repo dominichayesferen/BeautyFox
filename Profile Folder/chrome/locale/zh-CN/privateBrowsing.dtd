@@ -1,0 +1,7 @@
+<!ENTITY privateBrowsing.inPrivateIsOn      "InPrivate 浏览已开启">
+<!ENTITY privateBrowsing.indicator          "当 InPrivate 浏览开启时，您将看到此指示器">
+<!ENTITY privateBrowsing.addressBar         "地址栏中的 InPrivate">
+<!ENTITY privateBrowsing.info1              "<i>InPrivate 浏览</i>有助于防止 Internet Explorer 存储有关您的浏览会话的数据。这包括 Cookie、临时 Internet 文件、历史记录和其他数据。工具栏和扩展默认被禁用。有关更多信息，请参见帮助。">
+<!ENTITY privateBrowsing.info2              "要关闭 InPrivate 浏览，请关闭此浏览器窗口。">
+<!ENTITY privateBrowsing.learnMore          "了解更多关于 InPrivate 浏览的信息">
+<!ENTITY privateBrowsing.privacyStatement   "在线阅读 Internet Explorer 隐私声明">

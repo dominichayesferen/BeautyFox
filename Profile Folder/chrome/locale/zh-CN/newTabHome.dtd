@@ -1,0 +1,10 @@
+<!ENTITY newTabHome.title			"新标签页">
+
+<!ENTITY newTabHome.searchPlaceholder	"在网络上搜索">
+
+<!ENTITY newTabHome.headerIE9		"最常访问的网站">
+<!ENTITY newTabHome.headerIE10Plus	"最常访问的网站">
+
+<!ENTITY newTabHome.discoverSites		"发现你喜欢的网站">
+<!ENTITY newTabHome.lastSession			"重新打开上次会话">
+<!ENTITY newTabHome.inPrivateBrowsing	"InPrivate 浏览">
