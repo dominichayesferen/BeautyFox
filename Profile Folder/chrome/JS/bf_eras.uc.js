@@ -31,7 +31,7 @@ const bfDesigns = {
     //  hold the class prefix, such as "ie7" (thus, "ie7-5308", but "ie7" if it's the first design of that)
     //  store era, build and variant separately in about:config - if any are impossible, fallback to their default combinations
 
-    1: {
+    /** 1: {
         66: {
             name: "Build 66",
             basedOnVersion: "4.01.066",
@@ -467,7 +467,7 @@ const bfDesigns = {
             platforms: ["longhorn"],
             layout: "lh4"
         }
-    },
+    },*/
     7: {
         5112: {
             name: "Beta 1",
