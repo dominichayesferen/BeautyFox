@@ -34,6 +34,7 @@ const bfDesigns = {
     /** 1: {
         66: {
             name: "Build 66",
+            comment: "First known build"
             basedOnVersion: "4.01.066",
             styles: ["chrome", "pages"],
             platforms: ["classic"],
@@ -469,6 +470,16 @@ const bfDesigns = {
         }
     },*/
     7: {
+        5048: {
+            name: "Build 5048",
+            namexp: "Post-reset IE7 Mockup",
+            commentxp: "Seen in Thurrott's Road to Gold: Part 4",
+            basedOnVersion: {"all": "7.0.5048.0"},
+            class: "5048",
+            styles: ["chrome", "pages"],
+            platforms: ["winxp", "aero"],
+            layout: "ie75048"
+        },
         5112: {
             name: "Beta 1",
             basedOnVersion: {"all": "7.0.5112.0"},
@@ -486,7 +497,7 @@ const bfDesigns = {
             layout: "ie75231"
         },
         5270: {
-            name: "Build 5270",
+            name: "Beta 2",
             basedOnVersion: {"all": "7.0.5270.0"},
             class: "5270",
             styles: ["chrome", "pages"],
@@ -693,7 +704,7 @@ const bfDesigns = {
             class: "win10rtm",
             styles: ["chrome", "pages"],
             platforms: ["aero"],
-            layout: "ie9"
+            layout: "ie10"
         },
         "win10edge": {
             name: "Windows 10 20H2",
@@ -701,7 +712,7 @@ const bfDesigns = {
             class: "edge",
             styles: ["chrome", "pages"],
             platforms: ["aero"],
-            layout: "ie9"
+            layout: "ie10"
         },
         "win10edge2": {
             name: "Windows 10 21H1",
@@ -709,7 +720,7 @@ const bfDesigns = {
             class: "edge2",
             styles: ["chrome", "pages"],
             platforms: ["aero"],
-            layout: "ie9"
+            layout: "ie10"
         },
         "win10finale": {
             name: "Windows 10 21H2",
@@ -718,7 +729,7 @@ const bfDesigns = {
             class: "finale",
             styles: ["chrome", "pages"],
             platforms: ["aero"],
-            layout: "ie9"
+            layout: "ie10"
         }
     }
 }
