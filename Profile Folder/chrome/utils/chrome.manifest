@@ -1,3 +1,6 @@
 content userchromejs ./
-content userscripts ../JS/
+content userscripts ../JS/ contentaccessible=yes
 content modules ../JS/modules/
+
+skin	userstyles	classic/1.0	../CSS/
+content	userchrome	../			contentaccessible=yes

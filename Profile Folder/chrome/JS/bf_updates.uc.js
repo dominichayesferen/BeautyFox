@@ -1,3 +1,10 @@
+// ==UserScript==
+// @name        Beautyfox - Updates
+// @description Manages Beautyfox updates
+// @loadorder   2
+// @include     main
+// ==/UserScript==
+
 
 /**
  * bfUpdateSettings - Appends newly added Geckium config defaults based on an iteration value that keeps track of total first-launch-about:config-override updates
