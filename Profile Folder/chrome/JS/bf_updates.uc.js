@@ -31,6 +31,7 @@ function bfUpdateSettings() {
 			bfPrefUtils.set("gfx.webrender.dcomp-win.enabled").bool(false);						// Disable dcomp
 			bfPrefUtils.set("browser.display.windows.non_native_menus").int(0);
 			bfPrefUtils.set("browser.startup.blankWindow").bool(false);							// Disable Firefox's splash screen
+            bfPrefUtils.set("browser.startup.preXulSkeletonUI").bool(false);
 		}
 
 		bfPrefUtils.set("browser.tabs.tabmanager.enabled").bool(false);							// Disable that context-inappropriate chevron
