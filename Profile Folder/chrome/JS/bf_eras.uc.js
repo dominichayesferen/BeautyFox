@@ -6,10 +6,10 @@ const bfEras = {
      * 
      *      scrapped    - (bool) Conditional flag for scrapped release 6.05
      * 
-     *      platforms    - (dict) The platforms designs support (classic, modern, win3, mac - 1st is the default)
+     *      platforms    - win10, modern, legacy, win3, mac - defaults to first valid value if Automatic.
      *                     This will mainly be used by AeroThemeFox to know which msstyles format to assume here FIXME: ALWAYS SAME VALUE
      * 
-     *      kinds       - (dict) The categories designs will be categorised into, such as xp, win16, wine, extras...
+     *      kinds       - (dict) The categories designs will filter, such as win10, modern, legacy, win3 and mac
      * 
      *      class       - Prefix to use in identifying CSS class, such as "ie7"
      *                     This will be used solo on the first design of the era
