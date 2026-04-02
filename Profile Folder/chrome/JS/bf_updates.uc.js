@@ -12,9 +12,10 @@
  * iteration: User's current settings iteration amount
  */
 
-function bfUpdateSettings(iteration) {
+function bfUpdateSettings() {
     iteration = 1;
-    if (bfPrefUtils.tryGet("beautyfox.version.iteration").int < iteration) {
+    useriter = bfPrefUtils.tryGet("beautyfox.version.iteration").int;
+    if (useriter < iteration) {
         bfPrefUtils.set("beautyfox.version.iteration").int(iteration);                            // Set the iteration value to match updates
     } else if (bfPrefUtils.tryGet("toolkit.legacyUserProfileCustomizations.stylesheets").bool == false) {
 		bfPrefUtils.set("toolkit.legacyUserProfileCustomizations.stylesheets").bool(true);		// Ensure they're ALWAYS on
@@ -22,7 +23,7 @@ function bfUpdateSettings(iteration) {
     } else {
         return false;
     }
-	if (iteration < 1) {
+	if (useriter < 1) {
         bfPrefUtils.set("toolkit.legacyUserProfileCustomizations.stylesheets").bool(true);		// Turn on legacy stylesheets
 
 		if (AppConstants.platform == "win") {
