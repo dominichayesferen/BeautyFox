@@ -34,7 +34,7 @@ function bfUpdateSettings() {
             bfPrefUtils.set("browser.startup.preXulSkeletonUI").bool(false);
 		}
 
-		bfPrefUtils.set("browser.tabs.tabmanager.enabled").bool(false);							// Disable that context-inappropriate chevron
+		bfPrefUtils.set("browser.tabs.tabmanager.enabled").bool(false);							// FIXME: Remove and let eras set the usage of the chevron as it is actually used in IE7 and 8
         bfPrefUtils.set("browser.urlbar.trimURLs").bool(false);									// Show protocol in URL in URLbar
 		bfPrefUtils.set("browser.newtab.preload").bool(false)									// Disable New Tab preload to prevent new data from not loading
 		bfPrefUtils.set("browser.theme.dark-private-windows").bool(false);						// Disable incognito dark mode
