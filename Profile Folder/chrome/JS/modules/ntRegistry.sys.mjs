@@ -1,4 +1,3 @@
-// This is just the Beautyfox 1 ntRegistry code.
 export class NTRegistry {
     static hives = {
         "HKCR": 0x80000000, "HKEY_CLASSES_ROOT": 0x80000000,
