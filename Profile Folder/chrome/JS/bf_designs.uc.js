@@ -59,7 +59,7 @@ const bfDesigns = {
     //      variantid (name is translation id "ie(design ID)(variantid)")
     //          platform in platforms to apply when applying this variant (design is the parent design)
 
-    "66": {
+    /** "66": {
         era: "1",
         name: "66",
         final: null, // Build _
@@ -874,7 +874,7 @@ const bfDesigns = {
         lastredesign: "5112",
         layout: "ie8",
         variants: {}
-    },
+    },*/
     "7777": {
         era: "9",
         name: "7777",
@@ -966,7 +966,7 @@ const bfDesigns = {
         comment: false,
         ieversion: "11.0.9600.0",
         types: ["browser", "pages"],
-        platforms: ["aero", "xp"],
+        platforms: ["10", "aero", "xp"],
         lastredesign: "7777",
         layout: "ie9",
         variants: {}
@@ -978,7 +978,7 @@ const bfDesigns = {
         comment: false,
         ieversion: "11.0.10240.0",
         types: ["browser", "pages"],
-        platforms: ["aero"],
+        platforms: ["10"],
         lastredesign: "7777",
         layout: "ie11",
         variants: {}
@@ -990,7 +990,7 @@ const bfDesigns = {
         comment: false,
         ieversion: "10.0.9200.0",
         types: ["browser", "pages"],
-        platforms: ["aero"],
+        platforms: ["10"],
         lastredesign: "7777",
         layout: "ie11",
         variants: {}
@@ -1002,7 +1002,7 @@ const bfDesigns = {
         comment: false,
         ieversion: "10.0.9200.0",
         types: ["browser", "pages"],
-        platforms: ["aero"],
+        platforms: ["10"],
         lastredesign: "7777",
         layout: "ie11",
         variants: {}
@@ -1014,7 +1014,7 @@ const bfDesigns = {
         comment: true, // The final release of Internet Explorer 11
         ieversion: "10.0.9200.0",
         types: ["browser", "pages"],
-        platforms: ["aero"],
+        platforms: ["10"],
         lastredesign: "7777",
         layout: "ie11",
         variants: {}
