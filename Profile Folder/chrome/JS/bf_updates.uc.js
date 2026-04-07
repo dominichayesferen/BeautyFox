@@ -6,6 +6,7 @@
 // ==/UserScript==
 
 
+// FIRST RUN PRECONFIGURATION
 /**
  * bfUpdateSettings - Appends newly added Geckium config defaults based on an iteration value that keeps track of total first-launch-about:config-override updates
  * 
@@ -48,3 +49,21 @@ window.addEventListener("load", function() {
 		}, 1000);
     }
 });
+
+
+
+
+// UPDATER
+// FIXME: This will work a lot like Geckium's one, however there will be a
+//  setting to switch between stable and unstable Beautyfox updates
+
+//  the default value for updates type will be the value in versions.json.
+//  Unlike Geckium, this will be a settings page and a banner saying "Beautyfox can be updated to version _ (you are running _)."
+
+function bfGetUpdChannel() {
+
+}
+
+function bfCheckUpdates() {
+
+}

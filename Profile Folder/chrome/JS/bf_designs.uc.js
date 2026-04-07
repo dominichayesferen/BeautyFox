@@ -5,6 +5,10 @@
 // @include     main
 // ==/UserScript==
 
+// Initial variables
+let previousPlatform, previousDesign, previousVariant;
+
+
 const bfDesigns = {
     /**
      * id   - The number used in the about:config preference
@@ -595,18 +599,6 @@ const bfDesigns = {
         layout: "lh",
         variants: {}
     },
-    "4029": {
-        era: "6.05",
-        name: "4029",
-        final: null,
-        comment: false,
-        ieversion: "6.05.4029.0",
-        types: ["browser", "pages"],
-        platforms: ["aero", "xp"],
-        lastredesign: "4029",
-        layout: "lh",
-        variants: {}
-    },
     "4033": {
         era: "6.05",
         name: "4033",
@@ -1020,3 +1012,118 @@ const bfDesigns = {
         variants: {}
     }
 }
+// Unfortunately, JS was not made with common sense so does not respect insertion order, so this is unnecessarily needed. :/
+//const bfDesignOrder = ["66", "206", "1", "1995", "1996", "1.5", "1.6", "2.01", "474", "2", "2ve", "2.1", "520", "1028", "1056", "1072", "1086", "1100", "1101", "3", "1009", "1321", "225", "517", "544", "1008", "1116", "1120", "1125", "4", "5", "5.5", "5.6", "2410", "2419", "2428", "2433", "2465", "2469", "2474", "2494", "6", "4008", "4029", "4033", "4039", "4042", "4074", "4093", "5048", "5112", "5231", "5270", "5308", "5335", "5355", "5466", "7", "6730", "8xpb1", "6780", "6931", "8", "7777spillnt", "7850spillnt", "7777", "7930", "9", "8102", "8250", "8400", "10", "11", "11w10rtm", "11w10edge", "11w10edge2", "11fin"];
+const bfDesignOrder = ["7777", "7930", "9", "8102", "8250", "8400", "10", "11", "11w10rtm", "11w10edge", "11w10edge2", "11fin"];
+class bfDesign {
+
+
+
+
+
+
+
+    /**
+     * getBrowser - Gets the currently set design for the browser
+     * 
+     * If the variant doesn't exist, no variant will be used.
+     * If the platform is invalid, the first platform of the design will be used.
+     * If the design is invalid, Internet Explorer 9 (RTM) will be used.
+     */
+    // FIXME: Use the design ID to keep track of which era the design corresponds to in the Settings page
+    static getBrowser() {
+        let design = bfPrefUtils.tryGet("beautyfox.appearance.design").string;
+        let platf = bfPrefUtils.tryGet("beautyfox.appearance.platform").string;
+        let varia = bfPrefUtils.tryGet("beautyfox.appearance.variant").string;
+
+        // Use Internet Explorer 9 if the design is invalid
+        if (!design || !Object.keys(bfDesigns).includes(design)) {
+            return ["9", "aero", ""];
+        }
+        // Use no variant if the variant is invalid
+        if (!varia || !Object.keys(bfDesigns[design]["variants"]).includes(varia)) {
+            varia = "";
+        } else { // Use the variant's platform otherwise
+            platf = bfDesigns[design]["variants"][varia];
+            return [design, platf, varia];
+        }
+        // Use the default platform if the platform is invalid
+        if (!platf || !bfDesigns[design]["platforms"].includes(platf)) {
+            platf = bfDesigns[design]["platforms"][0];
+        }
+        return [design, platf, varia];
+    }
+
+
+    /**
+     * getPages - Gets the currently set design for the pages
+     * 
+     * Note that platform and variant values have no effect here.
+     */
+
+
+
+    /**
+     * apply - Applies the selected era to the browser and supported pages
+     */
+    static apply() {
+        let design, plat, vari;
+        if (document.URL == "about:newtab" || document.URL == "about:home" || document.URL == "about:privatebrowsing") {
+            design = bfDesign.getPages();
+            if (design == previousDesign)
+                return; // Don't continue if nothing changed
+        } else {
+            [design, plat, vari] = bfDesign.getBrowser();
+            if (plat == previousPlatform && design == previousDesign && vari == previousVariant)
+                return;
+        }
+
+        // Add and remove ie_ and ie(designid) classes based on the selected design
+        // Get the lastredesign value, remove all the design ids prior to it, add design ids inbetween then remove the rest.
+        let mindn = bfDesignOrder.indexOf(bfDesigns[design]["lastredesign"]);
+        let maxdn = bfDesignOrder.indexOf(design);
+        for (const [x, i] of bfDesignOrder.entries()) {
+            const attr = "ie" + i;
+            if (x >= mindn && x <= maxdn) {
+                document.documentElement.setAttribute(attr, "");
+            } else {
+                document.documentElement.removeAttribute(attr);
+            }
+        }
+        previousDesign = design;
+
+        if (document.URL == "about:newtab" || document.URL == "about:home" || document.URL == "about:privatebrowsing")
+            return;
+        
+        // Apply the platform and variant classes
+        // bfplatform = _, bfvariant = _
+        document.documentElement.setAttribute("bfplatform", plat);
+        document.documentElement.setAttribute("bfvariant", vari);
+
+
+        previousPlatform = plat;
+        previousVariant = vari;
+
+        // FIXME: add appearanceChanged event?
+    }
+
+}
+window.addEventListener("load", bfDesign.apply);
+
+// Automatically change Beautyfox Designs when the setting changes
+const bfDsnObserver = {
+	observe: function (subject, topic, data) {
+		if (topic == "nsPref:changed")
+			bfDesign.apply();
+	},
+};
+Services.prefs.addObserver("beautyfox.appearance.design", bfDsnObserver, false);
+Services.prefs.addObserver("beautyfox.appearance.platform", bfDsnObserver, false);
+Services.prefs.addObserver("beautyfox.appearance.variant", bfDsnObserver, false);
+Services.prefs.addObserver("beautyfox.appearance.overridepages", bfDsnObserver, false);
+Services.prefs.addObserver("beautyfox.appearance.pages", bfDsnObserver, false);
+
+
+
+// FIXME: Add warning if :root[remotecontrol]
+//  (red shield) Marionette is enabled. If you do not know what that is, your sign ins were likely stolen.
