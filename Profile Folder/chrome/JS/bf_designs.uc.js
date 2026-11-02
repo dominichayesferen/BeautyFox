@@ -965,7 +965,7 @@ const bfDesigns = {
     },
     "11w10rtm": {
         era: "11",
-        name: "custom", // Windows 10 1507
+        name: "custom", // Windows 10 RTM
         final: null,
         comment: false,
         ieversion: "11.0.10240.0",
@@ -977,10 +977,22 @@ const bfDesigns = {
     },
     "11w10edge": {
         era: "11",
-        name: "custom", // Windows 10 20H2
+        name: "custom", // Creators Update
         final: null,
         comment: false,
-        ieversion: "10.0.9200.0",
+        ieversion: "10.0.9200.0", // 1703
+        types: ["browser", "pages"],
+        platforms: ["10"],
+        lastredesign: "7777",
+        layout: "ie11",
+        variants: {}
+    },
+    "11w10mid": {
+        era: "11",
+        name: "custom", // 1803
+        final: null,
+        comment: false,
+        ieversion: "11.1.17134.0",
         types: ["browser", "pages"],
         platforms: ["10"],
         lastredesign: "7777",
@@ -989,10 +1001,10 @@ const bfDesigns = {
     },
     "11w10edge2": {
         era: "11",
-        name: "custom", // Windows 10 21H1
+        name: "custom", // 21H1 (with Edge Button)
         final: null,
         comment: false,
-        ieversion: "10.0.9200.0",
+        ieversion: "10.0.19043.928",
         types: ["browser", "pages"],
         platforms: ["10"],
         lastredesign: "7777",
@@ -1001,10 +1013,10 @@ const bfDesigns = {
     },
     "11fin": {
         era: "11",
-        name: "custom", // Windows 10 21H2
+        name: "custom", // 21H1 (Final Release)
         final: null,
-        comment: true, // The final release of Internet Explorer 11
-        ieversion: "10.0.9200.0",
+        comment: true, // Internet Explorer was removed by the next Windows Update
+        ieversion: "10.0.19044.2486",
         types: ["browser", "pages"],
         platforms: ["10"],
         lastredesign: "7777",
@@ -1020,7 +1032,7 @@ class bfDesign {
 
 
 
-
+    //  FIXME: Lost the changes - redo.
 
 
     /**
